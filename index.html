@@ -286,9 +286,7 @@
     }
 
     .cert-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+      display: block;
       padding: 7px 0;
       border-bottom: 1px solid var(--bg-alt);
     }
@@ -300,13 +298,6 @@
     }
 
     .cert-issuer { font-size: 12px; color: var(--muted); }
-
-    .cert-date {
-      font-size: 12px;
-      color: var(--muted);
-      white-space: nowrap;
-      margin-left: 12px;
-    }
 
     .badge {
       display: inline-block;
@@ -323,9 +314,7 @@
 
     /* ── EDUCATION ── */
     .edu-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+      display: block;
       padding: 12px 0;
       border-bottom: 1px solid var(--border);
     }
@@ -341,13 +330,6 @@
     .edu-school {
       font-size: 13px;
       color: var(--muted);
-    }
-
-    .edu-year {
-      font-size: 12.5px;
-      color: var(--muted);
-      white-space: nowrap;
-      margin-left: 16px;
     }
 
     /* ── AWARDS ── */
@@ -615,17 +597,16 @@
       <div class="cert-group">
         <div class="cert-group-title">Industry Certifications</div>
         <div class="cert-item">
-          <div><span class="cert-name">ISTQB Certified Tester – Foundation Level</span><span class="cert-issuer"> · ISTQB</span></div>
+          <span class="cert-name">ISTQB Certified Tester – Foundation Level</span><span class="cert-issuer"> · ISTQB</span>
         </div>
         <div class="cert-item">
-          <div><span class="cert-name">AWS Certified Solutions Architect – Associate</span><span class="cert-issuer"> · Amazon Web Services</span></div>
+          <span class="cert-name">AWS Certified Solutions Architect – Associate</span><span class="cert-issuer"> · Amazon Web Services</span>
         </div>
         <div class="cert-item">
-          <div><span class="cert-name">RHCE – Red Hat Certified Engineer</span><span class="cert-issuer"> · Red Hat</span></div>
+          <span class="cert-name">RHCE – Red Hat Certified Engineer</span><span class="cert-issuer"> · Red Hat</span>
         </div>
         <div class="cert-item">
           <span class="cert-name">Microsoft Azure AI Fundamentals (AI-900)</span><span class="cert-issuer"> · Microsoft</span>
-          <span class="cert-date">May 2026</span>
         </div>
       </div>
 
@@ -633,18 +614,15 @@
         <div class="cert-group-title">AI &amp; Machine Learning</div>
         <div class="cert-item">
           <span class="cert-name">AI Agents in LangGraph</span><span class="cert-issuer"> · DeepLearning.AI</span>
-          <span class="cert-date">Mar 2026</span>
         </div>
         <div class="cert-item">
           <span class="cert-name">AI for Everyone</span><span class="cert-issuer"> · DeepLearning.AI</span>
-          <span class="cert-date">Feb 2026</span>
         </div>
         <div class="cert-item">
-          <div><span class="cert-name">Deep Learning Specialization</span><span class="cert-issuer"> · DeepLearning.AI</span><span class="badge">In Progress</span></div>
+          <span class="cert-name">Deep Learning Specialization</span><span class="cert-issuer"> · DeepLearning.AI</span><span class="badge">In Progress</span>
         </div>
         <div class="cert-item">
           <span class="cert-name">AI Foundations: Machine Learning</span><span class="cert-issuer"> · LinkedIn Learning</span>
-          <span class="cert-date">Aug 2025</span>
         </div>
         <div class="cert-item">
           <span class="cert-name">Google AI</span><span class="cert-issuer"> · Google</span>
@@ -655,11 +633,9 @@
         <div class="cert-group-title">Cybersecurity</div>
         <div class="cert-item">
           <span class="cert-name">Cyber Security 101 Certificate</span><span class="cert-issuer"> · TryHackMe</span>
-          <span class="cert-date">Aug 2025</span>
         </div>
         <div class="cert-item">
           <span class="cert-name">Pre Security Certificate</span><span class="cert-issuer"> · TryHackMe</span>
-          <span class="cert-date">Aug 2025</span>
         </div>
       </div>
 
@@ -667,11 +643,9 @@
         <div class="cert-group-title">DevOps, Cloud &amp; Development</div>
         <div class="cert-item">
           <span class="cert-name">Introduction to Containers: Docker, Kubernetes &amp; OpenShift</span><span class="cert-issuer"> · IBM</span>
-          <span class="cert-date">Aug 2023</span>
         </div>
         <div class="cert-item">
           <span class="cert-name">Python 3: From Beginner to Advanced</span><span class="cert-issuer"> · Educative</span>
-          <span class="cert-date">Jan 2026</span>
         </div>
         <div class="cert-item">
           <span class="cert-name">Developing Front-End Apps with React</span><span class="cert-issuer"> · Coursera</span>
@@ -689,25 +663,16 @@
     <section id="education">
       <p class="section-title">Education</p>
       <div class="edu-item">
-        <div>
-          <div class="edu-degree">Executive PG Certificate – Generative AI &amp; Agentic AI<span class="badge">In Progress</span></div>
-          <div class="edu-school">IIT Kharagpur</div>
-        </div>
-        <div class="edu-year">2026</div>
+        <div class="edu-degree">Executive PG Certificate – Generative AI &amp; Agentic AI<span class="badge">In Progress</span></div>
+        <div class="edu-school">IIT Kharagpur</div>
       </div>
       <div class="edu-item">
-        <div>
-          <div class="edu-degree">Master of Computer Applications (MCA)</div>
-          <div class="edu-school">Sikkim Manipal University</div>
-        </div>
-        <div class="edu-year">2017</div>
+        <div class="edu-degree">Master of Computer Applications (MCA)</div>
+        <div class="edu-school">Sikkim Manipal University</div>
       </div>
       <div class="edu-item">
-        <div>
-          <div class="edu-degree">Bachelor of Computer Science</div>
-          <div class="edu-school">Pune University</div>
-        </div>
-        <div class="edu-year">2011</div>
+        <div class="edu-degree">Bachelor of Computer Science</div>
+        <div class="edu-school">Pune University</div>
       </div>
     </section>
 
